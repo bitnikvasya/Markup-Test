@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <title>Markup Test</title>
+      <link href="css/normalize.css" rel="stylesheet">
+      <link href="css/style.min.css" rel="stylesheet">
+      <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/roboto-v20-latin-ext-300.woff2" as="font" crossorigin="anonymous">
+      <link rel="preload" href="fonts/roboto-v20-latin-ext-regular.woff2" as="font" crossorigin="anonymous">
+   </head>
+   <body>
+      <header class="header">
+         <div class="header__wrapper">
+            <h1 class="visually-hidden">Markup Test</h1>
+            <a class="header__logo" href="#">
+            <img class="header__logo-image" src="img/logo.svg" width="24" height="24" alt="Логотип">
+            </a>
+            <form class="header__search" action="#" method="post">
+               <input placeholder="Поиск" type="search" class="header__search-input">
+            </form>
+            <nav class="header__navigation">
+               <ul class="header__navigation-list">
+                  <li class="header__navigation-item">
+                     <a href="#">Деньги</a>
+                  </li>
+                  <li class="header__navigation-item">
+                     <a href="#">Контакты</a>
+                  </li>
+                  <li class="header__navigation-item subnavigation">
+                     <a href="#">Услуги</a>
+                  </li>
+               </ul>
+            </nav>
+            <a class="header__new-payment" href="#"></a>
+            <a class="header__notifications" href="#"></a>
+            <a class="header__user-navigation subnavigation" href="#">ООО «Родные просторы»</a>
+         </div>
+      </header>
+      <main class="main">
+         <section class="page">
+            <div class="page__header">
+               <button class="page__header-toggle" type="button"><span class="visually-hidden">Закрыть документ</span></button>
+               <h2 class="page__header-text">Платежное поручение № 5241234 от 23.09.2015</h2>
+            </div>
+            <div class="payment">
+               <div class="payment__transaction">
+                  <p class="payment__transaction-amount">– 23 500,00 ₽</p>
+                  <p class="payment__transaction-account">со счета: <span>Расчетный счет (***012345)</span></p>
+                  <p class="payment__transaction-date">ИСПОЛНЕН, 21 июня 15:33</p>
+               </div>
+               <div class="payment__user">
+                  <div class="payment__user-details">
+                     <p class="payment__user-name">ООО "Родные просторы"</p>
+                     <p class="payment__user-itn">ИНН: 22341497819132</p>
+                     <p class="payment__user-bank">Банк: ОАО Сбербанк</p>
+                     <p class="payment__user-bic">БИК: 2352362365</p>
+                     <p class="payment__user-account">Счет: 40802810970010000395</p>
+                  </div>
+                  <div class="payment__user-rating">
+                     <p class="payment__user-stability">Высокая финансовая устойчивость</p>
+                     <p class="payment__user-reliability">Высокая благонадежность</p>
+                     <p class="payment__user-trustability">Кредитоспособность 44,5 млрд ₽</p>
+                  </div>
+               </div>
+               <div class="payment__purpose">
+                  <p class="payment__purpose-text">Оплата за партию ромашек и одуванчиков по договору 14023-023 от 14.05.2015 г. Сумма 11430-00. В том числе НДС 18% - 1450,00 ₽</p>
+               </div>
+               <div class="payment__note">
+                  <p class="payment__note-text">Комиссия банка: 70 р.<br>
+                     Размер комиссии рассчитан автоматически согласно тарифу вашей компании и является ознакомительным. Точный размер комиссии определяется после передачи платежного документа на обработку в банк.
+                  </p>
+               </div>
+            </div>
+            <div class="page__footer">
+               <nav class="footer__navigation">
+                  <ul class="footer__navigation-list">
+                     <li class="footer__navigation-item footer__navigation-item--repeat">
+                        <a href="#">Повторить</a>
+                     </li>
+                     <li class="footer__navigation-item footer__navigation-item--favorite">
+                        <a href="#">В избранное</a>
+                     </li>
+                     <li class="footer__navigation-item footer__navigation-item--ask">
+                        <a href="#">Спросить</a>
+                     </li>
+                     <li class="footer__navigation-item footer__navigation-item--acts">
+                        <a href="#">Действия</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </section>
+      </main>
+      <script src="js/close-toggle.js"></script>
+   </body>
